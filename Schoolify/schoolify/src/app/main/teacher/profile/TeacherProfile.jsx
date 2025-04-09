@@ -161,7 +161,7 @@ export default function TeacherProfile() {
                             className="py-4 border-b">{teacher?.teacher_email || "asda"}</p>
                             <p className="font-semibold py-4 border-b">Link:</p> <p
                             className="py-4 border-b">{teacher?.link || "asda"}</p>
-                            <p className="font-semibold py-4 border-b">Date of Birth:</p> <p
+                            <p className="font-semibold py-4 border-b">Subject:</p> <p
                             className="py-4 border-b">{teacher?.subject || "asda"}</p>
                             <p className="font-semibold py-4">Education Level:</p> <p
                             className="py-4">Grade {teacher?.grade || "asda"}</p>
