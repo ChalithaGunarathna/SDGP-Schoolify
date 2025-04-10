@@ -34,7 +34,7 @@ export function FooterSection() {
 
 
                     {/* Links Section */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div>
                             <h4 className="text-white font-semibold mb-2">About</h4>
                             <ul>
@@ -49,32 +49,30 @@ export function FooterSection() {
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="#team" className="hover:text-white text-black"
-                                          onClick={(e) => {
-                                              e.preventDefault(); // Prevent the default anchor behavior
-                                              handleScroll("team");
-                                          }}
+                                    <Link
+                                        href="https://www.getschoolify.com/"
+                                        className="hover:text-white text-black"
                                     >
-                                        Team
+                                        Marketing
                                     </Link>
                                 </li>
                             </ul>
                         </div>
-                        <div>
-                            <h4 className="text-white font-semibold mb-2">Follow Us</h4>
-                            <ul>
-                                <li>
-                                    <a href="#" className="hover:text-white">
-                                        Twitter
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" className="hover:text-white">
-                                        LinkedIn
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                        {/*<div>*/}
+                        {/*    <h4 className="text-white font-semibold mb-2">Follow Us</h4>*/}
+                        {/*    <ul>*/}
+                        {/*        <li>*/}
+                        {/*            <a href="#" className="hover:text-white">*/}
+                        {/*                Twitter*/}
+                        {/*            </a>*/}
+                        {/*        </li>*/}
+                        {/*        <li>*/}
+                        {/*            <a href="#" className="hover:text-white">*/}
+                        {/*                LinkedIn*/}
+                        {/*            </a>*/}
+                        {/*        </li>*/}
+                        {/*    </ul>*/}
+                        {/*</div>*/}
                         <div>
                             <h4 className="text-white font-semibold mb-2">Legal</h4>
                             <ul>

@@ -135,7 +135,7 @@ export const ProfileAndNotificationTeacher = () => {
         <div className="
                   rounded-full fixed
                   bottom-4 right-6 shadow-lg
-                  flex gap-4 items-center sm:flex-col flex-col z-50"
+                  flex gap-4 items-center sm:flex-row flex-col z-50"
         >
             <>
             <Button className="bg-warning"

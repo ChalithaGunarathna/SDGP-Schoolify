@@ -86,11 +86,8 @@ const ResultSheet = () => {
                             aria-label={`Term ${term} Grade Table`}
                             color="default"
                             selectionMode="single"
-                            removeWrapper
-                            isHeaderSticky
                             isKeyboardNavigationDisabled={true}
                             classNames={{
-                                base: "bg-customLightBlue text-black rounded-xl p-4", // ✅ wrapper background (now customBlue)
                                 table: "bg-white rounded-lg",                    // ✅ inner table background
                                 th: "text-white font-semibold text-sm",
                                 tr: "bg-white !outline-none !ring-0 focus:!ring-0",

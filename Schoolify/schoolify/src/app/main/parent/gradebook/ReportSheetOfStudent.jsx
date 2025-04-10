@@ -120,15 +120,27 @@ const ReportSheetOfStudent = () => {
                 <div key={term}>
                     <h3 className="text-2xl text-black font-semibold mb-2">Term {term} Results</h3>
                     {termGrades[term].length > 0 ? (
+                        // <Table
+                        //     aria-label={`Term ${term} Grade Table`}
+                        //     color="default"
+                        //     selectionMode="single"
+                        //     removeWrapper
+                        //     isHeaderSticky
+                        //     isKeyboardNavigationDisabled={true}
+                        //     classNames={{
+                        //         base: "bg-customLightBlue text-black rounded-xl", // ✅ wrapper background (now customBlue)
+                        //         table: "bg-white rounded-lg",                    // ✅ inner table background
+                        //         th: "text-white font-semibold text-sm",
+                        //         tr: "bg-white !outline-none !ring-0 focus:!ring-0",
+                        //         td: "text-sm text-black",
+                        //     }}
+                        // >
                         <Table
                             aria-label={`Term ${term} Grade Table`}
                             color="default"
                             selectionMode="single"
-                            removeWrapper
-                            isHeaderSticky
                             isKeyboardNavigationDisabled={true}
                             classNames={{
-                                base: "bg-customLightBlue text-black rounded-xl", // ✅ wrapper background (now customBlue)
                                 table: "bg-white rounded-lg",                    // ✅ inner table background
                                 th: "text-white font-semibold text-sm",
                                 tr: "bg-white !outline-none !ring-0 focus:!ring-0",

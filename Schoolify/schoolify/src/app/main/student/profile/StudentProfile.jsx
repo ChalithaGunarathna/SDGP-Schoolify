@@ -102,7 +102,7 @@ export default function StudentProfile() {
 
             const { data, error } = await supabase
                 .from("parent")
-                .select("parent_id, parent_name, parent_email, photo, contact, address")
+                .select("parent_id, parent_name, parent_email, photo, contact, address, guardian")
                 .eq("student_id", studentId);
 
 
@@ -202,7 +202,7 @@ export default function StudentProfile() {
                             <p className="font-semibold py-4 border-b">Guardian Name:</p> <p
                             className="py-4 border-b">{parent?.parent_name || "asda"}</p>
                             <p className="font-semibold py-4 border-b">Relationship:</p> <p
-                            className="py-4 border-b">Mother/Father</p>
+                            className="py-4 border-b">{parent?.guardian || "Guardian"}</p>
                             <p className="font-semibold py-4 border-b">Contact:</p> <p
                             className="py-4 border-b">{parent?.contact || "1234567890"}</p>
                             <p className="font-semibold py-4 border-b">Email:</p> <p

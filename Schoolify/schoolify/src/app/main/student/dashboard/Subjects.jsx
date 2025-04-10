@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Card, CardBody, CardFooter, Image } from "@nextui-org/react";
-import { supabase } from "@/app/lib/supabaseClient"; // Import Supabase client
+import { supabase } from "@/app/lib/supabaseClient";
+import {useRouter} from "next/navigation"; // Import Supabase client
 
 export default function Subjects() {
     // State variables
@@ -8,6 +9,7 @@ export default function Subjects() {
     const [subjectScheme, setSubjectScheme] = useState(null);
     const [selectedSubject, setSelectedSubject] = useState("");
     const [resources, setResources] = useState([]);
+    const router = useRouter(); // ✅ Initialize it here
 
     // Fetch student ID from local storage
     useEffect(() => {
@@ -55,9 +57,8 @@ export default function Subjects() {
     };
 
     // Handle subject card click
-    const handleOpen = (subject) => {
-        setSelectedSubject(subject);
-        fetchResources(subject);
+    const handleOpen = () => {
+        router.push(`/main/student/resources?role=student`);
     };
 
     // Define subjects based on `subject_scheme`
@@ -111,7 +112,7 @@ export default function Subjects() {
                             key={index}
                             isPressable
                             shadow="sm"
-                            onPress={() => handleOpen(subject)} // Corrected onPress
+                            onClick={() => handleOpen()} // Corrected onPress
                         >
                             <CardBody className="overflow-visible p-0">
                                 <Image

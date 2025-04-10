@@ -182,14 +182,14 @@ export default function LoginPage() {
                                     variant="bordered"
                                 />
 
-                                <div className="flex w-full items-center justify-between px-1 py-2">
-                                    <Checkbox name="remember" size="sm" className="text-gray-400">
-                                        Remember me
-                                    </Checkbox>
-                                    <Link className="text-sm text-gray-400" href="#" size="sm">
-                                        Forgot password?
-                                    </Link>
-                                </div>
+                                {/*<div className="flex w-full items-center justify-between px-1 py-2">*/}
+                                {/*    <Checkbox name="remember" size="sm" className="text-gray-400">*/}
+                                {/*        Remember me*/}
+                                {/*    </Checkbox>*/}
+                                {/*    <Link className="text-sm text-gray-400" href="#" size="sm">*/}
+                                {/*        Forgot password?*/}
+                                {/*    </Link>*/}
+                                {/*</div>*/}
                                 <Button
                                     className="w-full"
                                     color="primary"
