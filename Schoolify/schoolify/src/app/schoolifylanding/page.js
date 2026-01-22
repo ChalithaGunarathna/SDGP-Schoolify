@@ -16,7 +16,7 @@ export default function LoginPage() {
             <Hero />
             <Features />
             <Aboutus/>
-            <Team/>
+            {/* <Team/> */}
             <FooterSection/>
         </div>
     );
